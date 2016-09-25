@@ -130,7 +130,7 @@ public class MovieListFragment extends Fragment {
 
             String movieListJsonStr = null;
             try {
-                URL url = new URL("http://api.themoviedb.org/3/movie/popular?api_key=8499f26672ec5778fb71964387394e29");
+                URL url = new URL("http://api.themoviedb.org/3/movie/popular?api_key=<api_key>");
                 httpURLConnection = (HttpURLConnection) url.openConnection();
                 httpURLConnection.setRequestMethod("GET");
                 httpURLConnection.connect();
